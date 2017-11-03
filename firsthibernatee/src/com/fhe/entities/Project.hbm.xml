@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Dec 23, 2016 11:33:45 AM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="com.fhe.entities.Project" table="PROJECT">
+        <id name="projectId" type="int">
+            <column name="PROJECTID" />
+            <generator class="assigned" />
+        </id>
+        <property name="tittle" type="java.lang.String">
+            <column name="TITTLE" />
+        </property>
+        <property name="description" type="java.lang.String">
+            <column name="DESCRIPTION" />
+        </property>
+        <property name="duration" type="int">
+            <column name="DURATION" />
+        </property>
+        <property name="clientName" type="java.lang.String">
+            <column name="CLIENTNAME" />
+        </property>
+        <property name="status" type="string">
+            <column name="STATUS" />
+        </property>
+        <property name="domain" type="java.lang.String">
+            <column name="DOMAIN" />
+        </property>
+    </class>
+</hibernate-mapping>
